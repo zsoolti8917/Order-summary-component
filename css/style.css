@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-    background-color: aliceblue;
+    background-color: hsl(225, 100%, 94%);
     background-image: url("../images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -14,6 +15,11 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+p{
+    font-size: 16px;
 }
 
 /* body, main, .card, h1, p, .plan, h2, a, button, footer{
@@ -55,10 +61,12 @@ figure img {
 h1 {
     text-align: center;
     margin: 0 15%;
+    margin-top: 2rem;
 }
 
 .card>h1 {
     margin-top: 2rem;
+    
 }
 
 
@@ -72,8 +80,10 @@ h1 {
     display: grid;
     gap: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    
     border-radius: 20px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+    background-color: hsl(225, 100%, 98%);
 }
 
 .plan img {
@@ -127,17 +137,18 @@ footer {
 }
 
 .btn1 {
-    background-color: rebeccapurple;
+    background-color: hsl(245, 75%, 52%);
     color: white;
     padding: 15px 32px;
     border-radius: 20px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: none;
-
+font-size: 16px;
+font-weight: 700;
 }
 
 .btn1:hover {
-    background-color: rgba(102, 51, 153, 0.511);
+    background-color: hsl(224, 23%, 55%);
 }
 
 .btn2 {
@@ -145,9 +156,20 @@ footer {
     padding: 15px 32px;
     border-radius: 20px;
     border: none;
-    background-color: hsla(0, 0%, 100%, 0)
+    background-color: hsla(0, 0%, 100%, 0);
+    font-weight: 400;
 }
 
 .btn2:hover {
     font-weight: 700;
+}
+@media only screen and (max-width: 425px){
+    body{
+        background-image: url(../images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+
+    .card{
+        width: 87%;
+    }
 }
